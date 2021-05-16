@@ -3,7 +3,7 @@
 
 
 Download zip
-Extract file
+and Extract file
 
 
 ## References 
