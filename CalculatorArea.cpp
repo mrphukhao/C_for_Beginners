@@ -53,6 +53,7 @@ int main()
 		printf("Type only : Triangle = t, Rectangle = r, Circle = c");
 }
 
+// Func Triangle
 float Calculate_Area_Triangle(float b,float h)
 {
 	float t;
@@ -70,6 +71,7 @@ int Shape_Triangle(int b,int h)
 	
 }
 
+// Func Rectangle
 float Calculate_Area_Rectangle(float w,float l)
 {
 	float s;
@@ -87,6 +89,7 @@ int Shape_Rectangle(int w,int l)
 	}
 }
 
+// Func Circle
 float Calculate_Area_Circle(float r)
 {
 	float c;
