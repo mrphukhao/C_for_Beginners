@@ -1,30 +1,33 @@
 #include <stdio.h>
 //#include "circle.h"
-double Calculate_Triangle(double a, b);
-double Calculate_Rectangle(double length, breadth,);
-double Calculate_Circle(double circle_radius);
-int t,r,c,type,length,breadth;
-
-
+double Calculate_Rectangle();
+double Calculate_Rectangle(int length,int breadth);
+double Calculate_Circle();
 
 
 int main(){
-    int t,r,c,type,length,breadth;
+    int a, b, t, r, c, type, length, breadth;
 
     printf("Enter type of shapes (t,r,c): "); // Check type // Triangle // rectangle // Circle
     scanf("%d",&type);
-
-    if(type==t){
+    if(type=='t'){
         //call func Triangle
-        double Calculate_Triangle(double a, b);
+        double Calculate_Triangle(int a, int b);
     }
 
-    else if(type==r){
+    else if(type=='r'){
         //call func rectangle
-        double Calculate_Rectangle(double length, breadth,);
+    // printf("\nEnter the Length of Rectangle : "); // กว้าง
+    // scanf("%d", &length);
+ 
+    // printf("\nEnter the Breadth of Rectangle : "); // ยาว
+    // scanf("%d", &breadth);
+    
+        Shape_Rectangle(int length,int breadth);
+
     }
 
-    else if(type==t){
+    else if(type=='c'){
         //call func Circle
         double Calculate_Circle();
     }
@@ -35,9 +38,9 @@ int main(){
 
 
 
-double Calculate_Triangle(double a, b){
-        //input
-    double a, b, s, i, j;  
+double Calculate_Triangle(int a, int b){
+            //input
+    double s, i, j;  
  
     printf("Enter the lengths of base of a triangle : ");
     scanf("%lf", &a);
@@ -60,26 +63,30 @@ double Calculate_Triangle(double a, b){
         }  
         printf("\n");  
     }
-
-
-
+    return 0;
 }
 
-double Calculate_Rectangle(double length, breadth,){
-    int rows, cols , i, j, length, breadth, area;
+double Calculate_Rectangle(int length,int breadth){
+    int i, j, area;
 
     // input ค่า กว้าง * ยาว
-    printf("\nEnter the Length of Rectangle : "); // กว้าง
-    scanf("%d", &length);
+    // printf("\nEnter the Length of Rectangle : "); // กว้าง
+    // scanf("%d", &length);
  
-    printf("\nEnter the Breadth of Rectangle : "); // ยาว
-    scanf("%d", &breadth);
+    // printf("\nEnter the Breadth of Rectangle : "); // ยาว
+    // scanf("%d", &breadth);
     
     //คำนวณ พื้นที่
     area = length * breadth;
-    ("\nArea of Rectangle : %d \n", area);
+    //("\nArea of Rectangle : %d \n", area);
  
     //Display  รูปภาพ 
+
+    return area;
+}
+
+void Shape_Rectangle(int length,int breadth){
+    int i, j;
     for(i = 0; i < breadth; i++){
      /* Column iterator for loop */
         for(j = 0; j < length; j++){
@@ -90,7 +97,7 @@ double Calculate_Rectangle(double length, breadth,){
 }
 
 
-double Calculate_Circle(double circle_radius){
+double Calculate_Circle(){
    
    int circle_radius;
    float PI_VALUE=3.14, circle_area, circle_circumf;
@@ -104,6 +111,7 @@ double Calculate_Circle(double circle_radius){
    circle_area = PI_VALUE * circle_radius * circle_radius;
    printf("\nArea of circle is: %f",circle_area);
 
+   return 0;
 
 }
 

@@ -1,18 +1,45 @@
 Structure
 
 
-//
+//mian
 # Input Type of shapes
 
-triangle
-rectangle
-circle
+triangle = t
+rectangle = r
+circle = c
 
 #Check conditional
 
-triangle
+if type=triangle(){
+    //call func
+    Call func Calculate_Area_Triangle
+    Call func Shape_Triangle
+
+
+}
+
 rectangle
+
 circle
 
 
-#Call func ย่อย
+
+
+
+//func 
+
+#Call func Calculate_Area_Triangle
+    return area;
+
+#Call func Shape_Triangle
+    not return shapes;
+
+//
+#Call func Calculate_Area_Rectangle
+
+#Call func Shape_Rectangle
+
+//
+#Call func Calculate_Area_Circle
+
+#Call func Shape_Circle
