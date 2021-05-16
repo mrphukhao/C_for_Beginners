@@ -2,15 +2,14 @@
 int main()
 {
 
-    int A[8], i, n;
+    int A[8], i;
     for(int i=0; i<8; i++){
         //printf()
         printf("Enter num: ");
-        scanf("%d",&n);
-        A[i]=n;
+        scanf("%d",&A[i]);
         //printf("A[%d]=%d\n",i,A[i]);
     }
-    for(int i=0; i<8; i++){
-    printf("A[%d]=%d\n",i,A[i]);
-    }
+    for(int i=0; i<8; i++)
+        printf("A[%d]=%d\n",i,A[i]);
+    
 }
