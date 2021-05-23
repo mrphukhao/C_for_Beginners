@@ -62,12 +62,21 @@ float Calculate_Area_Triangle(float b,float h)
 }
 int Shape_Triangle(int b,int h)
 {
-	for(int i=1; i<=h; i++) // h= 5 // i=1 ,i<=1
-	{
-		for(int x=1; x<=i; x++) //x=1 ,x<=1
-			printf(" *"); // *
-		printf("\n");	 //
-	}
+	int i, j, l;
+	    // Shape
+    for(int i=1;i<=h-1;i++) // b high -1 (-base)
+    {  
+        printf("* ");
+        for(int j=1;j<=i-1;j++)  
+        {  
+            printf("* ");  
+
+        }  
+        printf("\n");  
+    }
+
+    for(int l=1; l<=b; l++) //(base)
+        printf("* ");
 	
 }
 
